@@ -34,6 +34,7 @@
             class="form-control"
             id="inputName1"
             placeholder="Escriba sus nombres"
+            required
           />
         </div>
 
@@ -44,13 +45,14 @@
             class="form-control"
             id="inputFirstName1"
             placeholder="Escriba sus apellidos"
+            required
           />
         </div>
 
         <div class="col-md-2">
           <label for="inputGenero1" class="form-label">Género</label>
           <select id="inputGenero1" class="form-select">
-            <option selected>Escoger</option>
+            <option selected></option>
             <option>Masculino</option>
             <option>Femenino</option>
           </select>
@@ -73,11 +75,30 @@
             class="form-control"
             id="inputEmail1"
             placeholder="Ingresar correo electronico"
+            required
           />
         </div>
         <div class="col-md-6">
           <label for="inputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword1" />
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword1"
+            required
+          />
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputNacimiento1" class="form-label"
+            >Fecha de Nacimiento</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="inputNacimiento1"
+            required
+          />
+          <label class="form-label" id="edad">Edad:</label>
         </div>
 
         <div class="col-12">
@@ -95,6 +116,8 @@
         </div>
       </form>
     </div>
+    <br />
+    <br />
     <script src="/docs/js/jquery-3.6.0.js"></script>
     <script src="/docs/js/controls.js"></script>
   </body>
