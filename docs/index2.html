@@ -22,7 +22,7 @@
       <br />
 
       <!-- Fomrulario registro de usuarios -->
-      <form class="row g-3">
+      <form class="row g-3" id="registrar">
         <br />
         <br />
         <h1 class="text-center registro">Formulario de Registro</h1>
@@ -48,8 +48,8 @@
         </div>
 
         <div class="col-md-2">
-          <label for="inputGenero" class="form-label">Género</label>
-          <select id="inputGenero" class="form-select">
+          <label for="inputGenero1" class="form-label">Género</label>
+          <select id="inputGenero1" class="form-select">
             <option selected>Escoger</option>
             <option>Masculino</option>
             <option>Femenino</option>
@@ -61,7 +61,7 @@
           <input
             type="text"
             class="form-control"
-            id="inputAddress"
+            id="inputAddress1"
             placeholder="Zona, Calle, número"
           />
         </div>
@@ -71,7 +71,7 @@
           <input
             type="email"
             class="form-control"
-            id="inputEmail4"
+            id="inputEmail1"
             placeholder="Ingresar correo electronico"
           />
         </div>
@@ -89,7 +89,9 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary" onclick="registrar()">
+            Sign in
+          </button>
         </div>
       </form>
     </div>
