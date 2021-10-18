@@ -1,2 +1,2 @@
 # ClaseBootstrap
-Ejmplo uso de bootstrap
+Ejemplo uso de bootstrap
