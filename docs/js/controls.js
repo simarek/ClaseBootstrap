@@ -45,24 +45,28 @@ function registrar() {
   } else {
     alert("Llenar los campos requeridos");
     //limpiando campos del formulaio, reseteo de datos
-    reg.reset();
   }
 }
 
-// defniendo objeto persona
-var persona = {
-  nombre: "Gato Macato",
-  correo: "gato_wawuay@top.com",
-  genero: "Masculino",
-  dia: "12",
-  mes: "1",
-  anio: "2000",
-};
+function persona(nombre, correo, genero, dia, mes, anio) {
+  this.nombre = nombre;
+  this.correo = correo;
+  this.genero = genero;
+  this.dia = dia;
+  this.mes = mes;
+  this.anio = anio;
+}
 
-// extrayendo año co la duncion Date()
+let per = new persona(
+  "Gato Macato",
+  "gato_wawuay@top.com",
+  "Masculino",
+  12,
+  10,
+  2000
+);
 console.log(persona);
-var fecha = parseInt(persona.anio);
 var factual = new Date();
 // calculando edad de persona
-var edad = factual.getFullYear() - fecha;
-console.log(persona.nombre, " tiene la edad de ", edad, "años.");
+var edad = factual.getFullYear() - per.anio;
+console.log(per.nombre, "tiene la edad de ", edad, "años.");
