@@ -19,46 +19,8 @@ function validar() {
   }
   return false;
 }
-// validando resgistro de usuarios
 
-//console.log("prueba javascrip");
-
-/*
-// recuperando id del formulario y tabla
-var reg = document.getElementById("registrar");
-var lista = document.getElementById("list_user");
-
-// recuperacion de datos del form registrar
-
-reg.addEventListener("submit", reguser);
-
-function reguser(e) {
-  //console.log("estoy dentro de la funcion");
-  e.preventDefault();
-  var name = document.getElementById("inputName1").value;
-  var fname = document.getElementById("inputFirstName1").value;
-  var gen = document.getElementById("inputGenero1").value;
-  var direc = document.getElementById("inputAddress1").value;
-  var mail = document.getElementById("inputEmail1").value;
-  var pass1 = document.getElementById("inputPassword1").value;
-  console.log(mail);
-
-  var tr = document.createElement("tr");
-  tr.className = "list";
-
-  tr.appendChild(document.createTextNode(name));
-  lista.appendChild(tr);
-  tr.appendChild(document.createTextNode(fname));
-  lista.appendChild(tr);
-  tr.appendChild(document.createTextNode(gen));
-  lista.appendChild(tr);
-  tr.appendChild(document.createTextNode(direc));
-  lista.appendChild(tr);
-  tr.appendChild(document.createTextNode(mail));
-  lista.appendChild(tr);
-}
-*/
-
+// objeto usuario
 class Usuario {
   constructor(name, fname, gen, direc, mail) {
     this.name = name;
