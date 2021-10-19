@@ -77,6 +77,8 @@ document.querySelector("#registrar").addEventListener("submit", (e) => {
   const direc = document.querySelector("#inputAddress1").value;
   const mail = document.querySelector("#inputEmail1").value;
 
+  registrar();
+
   const usuario = new Usuario(name, fname, gen, direc, mail);
 });
 
