@@ -13,7 +13,7 @@ function validar() {
     form.reset();
   } else {
     // saltar a la pagina web admin
-    location.href = "./admin.html";
+    location.href = "admin.html";
     //limpiando campos del formulaio, reseteo de datos
     form.reset();
   }
