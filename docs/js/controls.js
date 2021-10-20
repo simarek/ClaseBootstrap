@@ -13,7 +13,7 @@ function validar() {
     form.reset();
   } else {
     // saltar a la pagina web admin
-    location.href = "/docs/admin.html";
+    location.href = "./admin.html";
     //limpiando campos del formulaio, reseteo de datos
     form.reset();
   }
@@ -52,7 +52,7 @@ function registrar1() {
   if (name != "" || fname != "" || mail != "" || pass1 != "") {
     alert("Registro realizado con exito... Gracias");
     // saltar a la pagina web admin
-    location.href = "/docs/index.html";
+    location.href = "./index.html";
     //limpiando campos del formulaio, reseteo de datos
     reg.reset();
   } else {
